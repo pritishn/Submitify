@@ -18,11 +18,11 @@ let pop_up = document.createAttribute("target");
 pop_up.value = "_blank";           
 form.setAttributeNode(pop_up);           
 
-// comment-out the below code to remove click to erase on the text-box
-textarea_el.addEventListener('click', function (event) {
-    textarea_el.value = "";
+button= document.querySelector(".submit");
+button.addEventListener('click', function (event) {
+    textarea_el.select();
 });
-//---------------------------------------------------------------------
+
 $(function () {
     function adjustNotice(programTypeId) {
         var $programTypeNotice = $(".programTypeNotice");
