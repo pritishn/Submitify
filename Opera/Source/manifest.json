@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Submitify",
+  "description": "Codeforces - Submit On Problem Page",
+  "version": "1.0.2",
+  "content_scripts": [
+    {
+      "js":["Submitify.js"],
+      "matches":["https://codeforces.com/problemset/problem/*",
+        "https://codeforces.com/contest/*/problem/*"]
+  }
+  ],
+  "permissions": ["tabs"]
+}
