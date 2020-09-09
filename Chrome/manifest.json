@@ -5,7 +5,7 @@
   "description": "Allows you to submit solutions from the problem page without redirect.",
  
   "content_scripts": [{
-    "matches": ["https://codeforces.com/problemset/problem/*","https://codeforces.com/contest/*/problem/*"],
+    "matches": ["https://codeforces.com/*"],
       "js": ["Submitify.js"]
   }]
  
